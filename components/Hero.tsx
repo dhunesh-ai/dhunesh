@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronRight, Database, TrendingUp, Search, Terminal } from 'lucide-react';
 
+// --- IMPORTANT: Import the image here ---
+// If you get an error "Module not found", verify the path to your image relative to this file.
+import profilePic from './img1/dhuneshimg.png'; 
+
 interface HeroProps {
   isDark: boolean;
 }
@@ -106,8 +110,10 @@ const Hero: React.FC<HeroProps> = ({ isDark }) => {
               
               {/* Portrait Container */}
               <div className={`relative w-56 h-72 sm:w-80 sm:h-[28rem] rounded-[2rem] overflow-hidden border-2 glass transition-all duration-500 group-hover:scale-[1.02] group-hover:rotate-1 animate-float ${isDark ? 'border-white/10' : 'border-slate-200 shadow-2xl'}`}>
+                
+                {/* --- UPDATED IMAGE TAG --- */}
                 <img 
-                  src="img/dhuneshimg.png" 
+                  src={profilePic}
                   alt="Dhuneshwaran Portrait" 
                   className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700"
                 />
