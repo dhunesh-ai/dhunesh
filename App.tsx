@@ -42,7 +42,7 @@ const App: React.FC = () => {
           <div className="flex space-x-6">
   {/* GitHub Link */}
   <a 
-    href="https://github.com/dhunesh-2005" 
+    href="https://github.com/dhunesh-ai" 
     target="_blank" 
     rel="noopener noreferrer" 
     className={`transition-colors ${isDark ? 'text-slate-500 hover:text-white' : 'text-slate-400 hover:text-slate-900'}`} 
