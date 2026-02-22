@@ -66,9 +66,14 @@ const Navbar: React.FC<NavbarProps> = ({ isDark, toggleTheme }) => {
             {isDark ? <Sun size={20} /> : <Moon size={20} />}
           </button>
 
-          <a href="img/Dhuneshwaran V resume.pdf" className={`px-5 py-2 glass rounded-lg text-sm mono transition-colors ${isDark ? 'hover:bg-white/10' : 'hover:bg-black/5'}`}>
-            Resume.pdf
-          </a>
+          <a 
+  href="/resume.pdf" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className={`px-5 py-2 glass rounded-lg text-sm mono transition-colors ${isDark ? 'hover:bg-white/10' : 'hover:bg-black/5' }`}
+>
+  Resume.pdf
+</a>
         </div>
 
         {/* Mobile Toggle */}
